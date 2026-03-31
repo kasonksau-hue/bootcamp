@@ -4,4 +4,5 @@
 #### H4
 
 -Welcome to bootcamp
-..
+.. we are going to learn Java 
+or Python 
