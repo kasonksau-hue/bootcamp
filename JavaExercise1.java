@@ -44,14 +44,13 @@ public class JavaExercise1 {
     byte b2 = 70;
     // code here with tips, pls fix ...
     // sum = b1 + b2;
-    int sum = b1 + b2;
-    System.out.println("The another sum reuslt is " + sum);
+    int b3 = (b1 + b2);
+    System.out.println("The another sum reuslt is " + b3);
 
     // declare two boolean variable with true and false value
     // code here
-    boolean iselderly = 65;
-    varB 
-
+    boolean varB = false; 
+    boolean varC = true; 
     System.out.println("The variable varB is " + varB);
     System.out.println("The variable varC is " + varC);
 
@@ -65,16 +64,17 @@ public class JavaExercise1 {
     // Find reminder. Declare variable a & reminder
     int a = 7;
     int b = 3;
-    // Fix it ...
+    // Fix it ... 
     int remainder = a % b;
-    System.out.println("The variable remainder is " + remainder);
+    System.out.println("The variable remainder is " + remainder);//1
 
     // declare a variable x and assign value to it.
     int e = 7;
     int o = 8;
     int y = 4;
+    int x = 2;
     // code here ... define the x and assign value to it
     int result = e - o * x / y;
-    System.out.println("The result is " + result);
+    System.out.println("The result is " + result);//3
   }
 }
