@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.MediaSize.Other;
+
 /**
  * Expected Output:
  * 
@@ -51,16 +53,12 @@ public class JavaExercise2 {
 
         // ==================== Question 4: String equals ====================
         String language = "Java";
-        String language2 = "Python";
-        String language3 = "Other";
 
-        String s1 = "Java";
-
-        if (s1.equals(language)/* 填條件：language 係 "Java" */) {
+        if ("Java".equals(language)/* 填條件：language 係 "Java" */) {
             System.out.println("We are learning the best programming language!");
-        } else if (s1.equals(language2)/* 填條件：language 係 "Python" */) {
+        } else if ("Python".equals(language)/* 填條件：language 係 "Python" */) {
             System.out.println("Python is also very popular.");
-        } else if (s1.equals(language3)){
+        } else if ("Other".equals(language)){
             System.out.println("Other programming language.");
         }
 
