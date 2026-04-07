@@ -36,30 +36,91 @@ public class JavaExercise4 {
     System.out.print("Input a year: ");
     int year = scanner.nextInt(); // > 0
 
+    // Check isLeapYear
+boolean isLeapYear = 
+    (year % 4 == 0 && year % 100 != 0) 
+    || (year % 400 == 0);
+
+    // Switch Month
     switch (month) {
       case 1:
+        monthOfName = "January";
         number_Of_DaysInMonth = 31;
         break;
+
       case 2:
+        monthOfName = "February";
+        if (isLeapYear)
+          number_Of_DaysInMonth = 29;
+        else
+          number_Of_DaysInMonth = 28;
+        break;
+
       case 3:
+        monthOfName = "March";
+        number_Of_DaysInMonth = 31;
+        break;
+
       case 4:
+        monthOfName = "April";
+        number_Of_DaysInMonth = 30;
+        break;
+
       case 5:
+        monthOfName = "May";
+        number_Of_DaysInMonth = 31;
+        break;
+
       case 6:
+        monthOfName = "June";
+        number_Of_DaysInMonth = 30;
+        break;
+
       case 7:
+        monthOfName = "July";
+        number_Of_DaysInMonth = 31;
+        break;
+
       case 8:
+        monthOfName = "August";
+        number_Of_DaysInMonth = 31;
+        break;
+
       case 9:
+        monthOfName = "September";
+        number_Of_DaysInMonth = 30;
+        break;
+
       case 10:
+        monthOfName = "October";
+        number_Of_DaysInMonth = 31;
+        break;
+
       case 11:
+        monthOfName = "November";
+        number_Of_DaysInMonth = 30;
+        break;
+
       case 12:
+        monthOfName = "December";
+        number_Of_DaysInMonth = 31;
+        break;
+
       default:
+        System.out.println("Invalid month!");
+        break;
     }
+
+    scanner.close();
+
+    System.out.println(
+        monthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
+
     // Leap Year: The February has 29 days:
     // 1. Every 4 years (the year is divided by 4)
     // 2. But if the year is divded by 100 and NOT divided by 400 -> Not a leap year.
     // 3. if the year is divided by 400, it is a leap year.
-    scanner.close();
-    System.out.println(
-        monthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
+
   }
 
 }
