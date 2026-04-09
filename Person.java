@@ -26,12 +26,25 @@ public class Person {
     return this.weight;
   }
 
-public  double getBmi(){
+public  double Bmi(){
   return this.weight /(this.height * this.height);}
   
   public boolean isOverweight(){
-    return getBmi() >= 25;
+    return Bmi() >= 25;
 }
+//retunr this.weight>100 {return  true;} {return  false;}
+
+public String bmiGroup (){
+  double bmi = this.bmi();
+if (bmi()>25){
+return "Overweight"; 
+}else if (bmi()<18.5){
+  return "Underweight";}
+  {
+    return "Normal";
+  } 
+}
+
 
 public static void main(String[] args) {
   
@@ -40,7 +53,7 @@ public static void main(String[] args) {
     p1.setHeight (1.76);
     p1.setWeight (85);
 
-    double bmi = p1.getBmi();
+    double bmi = p1.Bmi();
     System.out.println("BMI = " + bmi);
 
 if (bmi < 18.5 ) {
