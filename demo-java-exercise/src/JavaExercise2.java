@@ -1,4 +1,3 @@
-import javax.print.attribute.standard.MediaSize.Other;
 
 /**
  * Expected Output:

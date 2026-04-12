@@ -1,0 +1,24 @@
+import self.People;
+
+public class Week2Revision {
+  public static void main(String[] args) {
+    // Class - Attributes (private), Constructors (Create Object), Methods
+    // Method - Getter, Setter (後期修改)
+    // Method: Presentation (isVip, isAdult, totalAmount, subtotal, bmi)
+    // One-to-One: Class has Class
+    // One-to-Many: Class has Array
+
+    // Examples: Customer/Order/Item, Person, Circle
+
+    People p1 = new People();
+    People p2 = new People("John", 1.76, 75);
+    p1.setName("Mary");
+    p2.setHeight(1.78);
+    System.out.println(p2.getHeight());
+
+    // BigDecimal (BigDecimal.valueOf()), String Methods, Array + Loop (String[], int[]), Wrapper Class
+    // equals, compareTo
+
+    // LocalDate (LocalDate.of())
+  }
+}

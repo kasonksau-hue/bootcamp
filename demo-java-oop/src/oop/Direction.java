@@ -1,0 +1,48 @@
+package oop;
+// ! Immutable
+public enum Direction {
+  EAST(1, "East."), SOUTH(2, "South."), WEST(-1, "West."), NORTH(-2, "North."),;
+  
+  // attribute
+  private int value;
+  private String desc;
+
+  // Private Constructor
+  private Direction(int value, String desc) {
+    this.value = value;
+    this.desc = desc;
+  }
+
+  // Presentation
+  // Direction.NORTH.oppsite() -> SOUTH
+  public Direction oppsite() {
+    for (Direction d : Direction.values()) {
+      if (this.value * -1 == d.getValue()) {
+        return d;
+      }
+    }
+    return null;
+  }
+
+  public int getValue() {
+    return this.value;
+  }
+
+  public String getDesc() {
+    return this.desc;
+  }
+
+  public static void main(String[] args) {
+    Direction d1 = Direction.SOUTH;
+    System.out.println(d1.getValue()); // 2
+
+    System.out.println(Direction.SOUTH.getValue()); // 2
+    System.out.println(Direction.SOUTH.getDesc()); // South.
+
+    for (Direction d : Direction.values()) {
+      System.out.println(d.getDesc());
+    }
+
+    System.out.println(Direction.NORTH.oppsite()); // SOUTH
+  }
+}
