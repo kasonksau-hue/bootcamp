@@ -1,4 +1,4 @@
-package oop;
+
 public class Card {
   private int rank; // 1,2,3,4,5,6,7,8,10,J,Q,K (1-13) (0-12)
   private Suite suite; // DIAMOND, CLUB, HEART, SPADE

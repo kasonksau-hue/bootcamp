@@ -1,5 +1,4 @@
-package oop;
-// Circle (radius)
+
 
 public class Person {
   // Attributes

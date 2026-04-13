@@ -1,4 +1,4 @@
-package oop;
+
 public class Item {
   // id
   private String name;

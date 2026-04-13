@@ -39,7 +39,7 @@ System.out.println(g);
 int p = 10;
 int k2 = ++p * 2; 
 System.out.println(k2); //22 
-System.out.println(p) ; /11
+System.out.println(p); //11
 
 }
 }

@@ -1,4 +1,4 @@
-package oop;
+
 //Java Class (藍圖->生產Object)
 public class Tutor {
 //Attribute 

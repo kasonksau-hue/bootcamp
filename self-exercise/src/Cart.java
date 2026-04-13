@@ -3,19 +3,19 @@ import java.math.BigDecimal;
 public class Cart {
 
 
-  private product[] items;
+  private Item[] items;
 
-  public Cart(product[] items) {
+  public Cart(Item[] items) {
     this.items = items;
   }
-    public product[] getItems(){
+    public Item[] getItems(){
       return this.items; 
     }
 
   public double totalAmount() { 
     BigDecimal sum = BigDecimal.ZERO;
     for (int i = 0; i < this.items.length; i++) {
-      product item = this.items[i];
+      Item item = this.items[i];
       double subTotal = item.getSubtotal();
       sum = sum.add(BigDecimal.valueOf(subTotal));
     }
@@ -24,16 +24,16 @@ public class Cart {
  
   public static void main(String[] args) {
     
-        product Apple = new product ("Apple", 10, 3);
-    product Book = new product ("Book", 80, 1);
+        Item Apple = new Item ("Apple", 10, 3);
+    Item Book = new Item ("Book", 80, 1);
   
-    product[] items = new product[2] ; 
+    Item[] items = new Item[2] ; 
     items[0] = Apple ;
     items[1] = Book ; 
 
     Cart c1 = new Cart(items);
 
-    System.out.println(product[i].totalAmount());
+    System.out.println(c1.totalAmount());
 
     
   }

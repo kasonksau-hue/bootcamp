@@ -1,4 +1,4 @@
-package oop;
+
 public class String1 {
   private char[] chs; // "hello" -> chs
 

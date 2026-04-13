@@ -91,11 +91,10 @@ public class Demoif {
         char grade = 'F'; 
         if (score >=90 ){
           grade = 'A'; 
-        } else if (score >= 80) 
-          {grade 'B'};
-        }else if(score>=70)
-
-  {grade 'C'};
+        } else if (score >= 80) {
+          grade ='B';
+        }else if(score>=70) {
+          grade = 'C';}
 
   // Grade A or GradeB -> Print Excellent
   if(grade=='A'||grade=='B')
@@ -103,17 +102,18 @@ public class Demoif {
     System.out.println("Excellent.");
   }else if(grade=='C'){
           System.out.println("Pass.");
-
+  }
           String s1 = "Java"; 
           // check if s1 start with J or s1 length >5 ->print hello
           // otherwise -> print byebye
 
-          if (s1.charAt(0) == "J" || s1.length()>5{
+          if (s1.charAt(0) == 'J' || s1.length()>5){
             System.out.println("hello");
+          } 
             else {
             System.out.println("byebye");
             }
-          }
+          
     //Swith Weak: 1.AND OR 2.Range checking 3.break
     char gender = 'M';
     switch (gender) {
@@ -121,7 +121,7 @@ public class Demoif {
       System.out.println("He is a male");
       case 'F':
       System.out.println("She is a female");
-      break
+      break;
       default :
       System.out.println("Invalid Gender.");
     }

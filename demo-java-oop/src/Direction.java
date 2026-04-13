@@ -1,4 +1,4 @@
-package oop;
+
 // ! Immutable
 public enum Direction {
   EAST(1, "East."), SOUTH(2, "South."), WEST(-1, "West."), NORTH(-2, "North."),;
@@ -39,10 +39,22 @@ public enum Direction {
     System.out.println(Direction.SOUTH.getValue()); // 2
     System.out.println(Direction.SOUTH.getDesc()); // South.
 
+    //!For-each loop (loop enum)
     for (Direction d : Direction.values()) {
       System.out.println(d.getDesc());
     }
 
     System.out.println(Direction.NORTH.oppsite()); // SOUTH
+
+    //!Other examples (for-each)
+    int[] arr = new int[] {4,9,-5};
+    for(int i = 0; i<arr.length; i++){
+      System.out.println(arr[i]);
+
+      for (int x : arr) // Loop through all elements 
+        System.out.println(x);
+
+
+    }
   }
 }

@@ -1,4 +1,4 @@
-package oop;
+
 public class DemoClassObject {
   public static void main(String[] args) {
     // Primitives, String, Array, if, loop

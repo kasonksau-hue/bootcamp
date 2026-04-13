@@ -1,4 +1,4 @@
-package oop;
+
 public class DemoEnum {
   public static void main(String[] args) {
     String color = "RED";
@@ -13,6 +13,6 @@ public class DemoEnum {
     // Java Object -> Not being referenced -> auto GC
 
     // Color.RED -> RED Object
-    Color red = Color.RED;
+    Color2 red = Color2.RED;
   }
 }

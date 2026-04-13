@@ -4,22 +4,22 @@ public class JavaExercise3 {
     // 1. Vowel (a, e, i, o, u – both lowercase and uppercase)
     // 2. Consonant (anothor 21 letters)
     // 3. Not an alphabet
-    String s1= "sFde87af98";
-    String output = "";
+    char ch = 'i';
 
-        for (int i = 0; i < s1.length(); i++) {
-            
-        boolean Vowel = s1.charAt(i) {
-        if s1 contains (65 69 73 79 85 97 101 105 111 117)}
-       
-                System.out.println(Vowel);
-                
-          else if {
-        boolean Consonant = s1.charAt(i) >= 65 && s1.charAt(i)<=122;}
-                System.out.println(Consonant);
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
 
-                else {}                 System.out.println("Not an alphabet");
-   
+      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
+       || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+
+        System.out.println("Vowel");
+
+      } else {
+        System.out.println("Consonant");
+      }
+
+    } else {
+      System.out.println("Not an alphabet");
+    }
 
 
     // Take salary and years of experience, then calculate and print bonus
