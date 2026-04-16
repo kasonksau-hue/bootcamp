@@ -29,7 +29,7 @@ public class Cat extends Animal {
   // }
 
   public static void main(String[] args) {
-    Cat c1 = new Cat();
+    Cat2 c1 = new Cat2();
     c1.setAge(5);
     c1.setName("Mary");
     System.out.println(c1.getAge());
