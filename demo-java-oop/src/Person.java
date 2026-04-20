@@ -81,8 +81,8 @@ public class Person {
   // Runtime
   // JVM execute main method
   public static void main(String[] args) {
-    Person p1 = new Person();
-    Person p2 = new Person();
+    Person1 p1 = new Person1();
+    Person1 p2 = new Person1();
     p1.setName("John");
     p1.setHeight(1.76);
     p1.setWeight(75);

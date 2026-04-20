@@ -13,6 +13,8 @@ public class Cat2 {
     return this.name;
   }
 
+  //! HashMap/ HashSet use hashCode & equals
+  //背boolean and hashcode Override兩句一齊用
   @Override
   public boolean equals(Object o) {
     if (this == o)
@@ -24,7 +26,21 @@ public class Cat2 {
   }
 
   @Override
-  public int hashCode() {
-    return Objects.hash(this.name);
+  public int hashCode(){
+    return Objects.hash(this.name); 
   }
+
+  @Override
+  public String toString(){
+    return "Cat("
+    +"name" + this.name
+    +")"; 
+
+  }
+  public static void main(String[] args) {
+    Cat2 c1 = new Cat2("John"); 
+    System.out.println(c1);  // Cat(name=John)
+    
+  }
+
 }

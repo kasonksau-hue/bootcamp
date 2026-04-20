@@ -159,6 +159,18 @@ System.out.println("All students:");
     // 9b. Find the common students of the two sets
     // 9c. Print the result.
 
+    HashSet<Student2> students2 = new HashSet<>();
+    students2.add(new Student2(1, "Alice"));
+    students2.add(new Student2(2, "Bob")); 
+    students2.add(new Student2(3, "Charlie"));
+
+    HashSet<Student2> students3 = new HashSet<>();
+    students3.add(new Student2(2, "Bob"));
+    students3.add(new Student2(3, "Charlie"));
+    students3.add(new Student2(4, "David"));
+
+    students2.retainAll(students3);
+    System.out.println(students2);
   }
 
   public static class Student {

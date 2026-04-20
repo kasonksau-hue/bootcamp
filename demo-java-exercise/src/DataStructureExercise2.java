@@ -1,7 +1,11 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class DataStructureExercise2 {
   public static void main(String[] args) {
@@ -11,6 +15,17 @@ public class DataStructureExercise2 {
     // 1c. Print the head of the queue without removing it.
     // 1d. Remove two elements from the queue.
     // 1e. Print the remaining queue and its size.
+    Queue <Integer> queue1 = new LinkedList<>();
+    queue1.add(5); 
+    queue1.add(10);
+    queue1.add(15);
+    queue1.add(20);
+    queue1.add(25);
+    System.out.println(queue1.peek());
+    queue1.remove();
+    queue1.remove(25);
+    System.out.println(queue1);
+    System.out.println(queue1.size());
 
     // Exercise 2: Queue Simulation
     // 2a. Create a Queue of Strings representing customers in a bank line.
@@ -19,6 +34,21 @@ public class DataStructureExercise2 {
     // 2c. Print the remaining customers in the queue.
     // 2d. Add two new customers: "Eva", "Frank".
     // 2e. Write a method that processes the queue until it is empty, printing each served customer.
+    Queue<String> cq = new ArrayDeque<>();
+    cq.add("Alice");
+    cq.add("Bob");
+    cq.add("Charlie");
+    cq.add("David");
+    cq.poll();
+    cq.poll();
+    System.out.println(cq);
+    cq.add("Eva");
+    cq.add("Frank"); 
+
+    while (!cq.isEmpty()){
+      String head = cq.poll();
+      System.out.println(head);
+    }
 
     // Exercise 3: Palindrome Checker
     // 3a. Write a method `isPalindrome(String word)` using a Deque<Character>.
@@ -30,6 +60,12 @@ public class DataStructureExercise2 {
     // Add pages: "google.com", "facebook.com", "youtube.com", "github.com".
     // 4b. Simulate "back" and "forward"g navigation using deque operations.
     // 4c. Print the current page after each operation.
+    Deque<String> dq = new ArrayDeque<>(); 
+    dq.add("google.com"); 
+    dq.add("facebook.com");
+    dq.add("youtube.com");
+    dq.add("github.com");
+    
 
     // Exercise 5: Word Frequency Counter
     // 5a. Create a method `countWordFrequency(String text)` that uses a HashMap<String, Integer>.
